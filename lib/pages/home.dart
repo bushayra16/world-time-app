@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
     print(data);
 
     //set background
-   
+
     String bgImage = data['isDaytime'] ? 'day.jpg' : 'night.jpg';
     Color bgColor = data['isDaytime'] ? Colors.white : Colors.black;
 
@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
                       ),
                       SizedBox(
                         child: Text(
-                          data['time'],
+                          data['Time'],
                           style: TextStyle(
                             fontSize: 50.0,
                             color: Colors.white,
