@@ -13,8 +13,8 @@ class WorldTime {
 
   Future<void> getTime() async {
     // see the difference, it is http.get()
+    
     //make the request
-
     Response response =
         await get(Uri.parse('https://www.worldtimeapi.org/api/timezone/$url'));
     Map data = jsonDecode(response.body);
